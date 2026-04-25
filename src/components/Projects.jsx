@@ -27,7 +27,7 @@ const projects = [
       "Error handling for invalid cities",
       "Mobile-first layout",
     ],
-    githubUrl: "https://github.com/",
+    githubUrl: "https://github.com/SatyamTomar7/Weather",
     liveUrl: "https://weather-seven-olive-27.vercel.app/",
   },
   {
@@ -41,7 +41,7 @@ const projects = [
       "Persistent task storage",
       "Simple and intuitive UX",
     ],
-    githubUrl: "https://github.com/",
+    githubUrl: "https://github.com/SatyamTomar7/Todo-list",
     liveUrl: "https://todo-list-mu-wine-11.vercel.app/",
   },
 ];
