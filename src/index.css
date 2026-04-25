@@ -1,0 +1,190 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  scroll-margin-top: 7rem;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  color: #e2e8f0;
+  background:
+    radial-gradient(
+      circle at 10% 10%,
+      rgba(34, 211, 238, 0.18),
+      transparent 32%
+    ),
+    radial-gradient(
+      circle at 90% 18%,
+      rgba(129, 140, 248, 0.2),
+      transparent 36%
+    ),
+    linear-gradient(165deg, #020617 0%, #0f172a 55%, #111827 100%);
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.app-shell {
+  position: relative;
+  min-height: 100vh;
+  overflow-x: clip;
+}
+
+.app-content {
+  position: relative;
+  z-index: 1;
+}
+
+.animated-bg {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.orb {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(65px);
+  opacity: 0.45;
+  will-change: transform;
+}
+
+.orb-1 {
+  height: 22rem;
+  width: 22rem;
+  top: -6rem;
+  left: -4rem;
+  background: linear-gradient(
+    135deg,
+    rgba(56, 189, 248, 0.5),
+    rgba(99, 102, 241, 0.2)
+  );
+  animation: float-a 14s ease-in-out infinite;
+}
+
+.orb-2 {
+  height: 20rem;
+  width: 20rem;
+  top: 24%;
+  right: -5rem;
+  background: linear-gradient(
+    135deg,
+    rgba(129, 140, 248, 0.45),
+    rgba(14, 116, 144, 0.2)
+  );
+  animation: float-b 16s ease-in-out infinite;
+}
+
+.orb-3 {
+  height: 18rem;
+  width: 18rem;
+  bottom: -5rem;
+  left: 38%;
+  background: linear-gradient(
+    135deg,
+    rgba(34, 211, 238, 0.35),
+    rgba(59, 130, 246, 0.2)
+  );
+  animation: float-c 18s ease-in-out infinite;
+}
+
+@keyframes float-a {
+  0% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(2.5rem, 2rem, 0) scale(1.08);
+  }
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+}
+
+@keyframes float-b {
+  0% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(-2rem, -2.5rem, 0) scale(1.05);
+  }
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+}
+
+@keyframes float-c {
+  0% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(1.75rem, -2rem, 0) scale(1.06);
+  }
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+}
+
+html.light body {
+  color: #0f172a;
+  background:
+    radial-gradient(circle at 8% 10%, rgba(14, 165, 233, 0.2), transparent 34%),
+    radial-gradient(
+      circle at 90% 15%,
+      rgba(129, 140, 248, 0.18),
+      transparent 35%
+    ),
+    linear-gradient(165deg, #f8fafc 0%, #eef2ff 55%, #e2e8f0 100%);
+}
+
+html.light .orb-1,
+html.light .orb-2,
+html.light .orb-3 {
+  opacity: 0.35;
+}
+
+html.light [class*="bg-slate-900/"],
+html.light [class*="bg-slate-950/"],
+html.light [class*="bg-white/5"] {
+  background-color: rgba(248, 250, 252, 0.74) !important;
+}
+
+html.light [class*="text-white"],
+html.light [class*="text-slate-100"],
+html.light [class*="text-slate-200"] {
+  color: #0f172a !important;
+}
+
+html.light [class*="text-slate-300"],
+html.light [class*="text-slate-400"] {
+  color: #334155 !important;
+}
+
+html.light [class*="border-white/"] {
+  border-color: rgba(15, 23, 42, 0.18) !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .orb {
+    animation: none !important;
+  }
+}
