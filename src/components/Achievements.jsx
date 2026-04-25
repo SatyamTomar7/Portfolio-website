@@ -20,12 +20,6 @@ const achievements = [
       "Recognized among top performers in the university merit list for strong academic consistency and technical excellence.",
     icon: FaMedal,
   },
-  {
-    title: "IEEE Participation",
-    description:
-      "Actively participated in IEEE activities and technical discussions, contributing to continuous learning and peer collaboration.",
-    icon: FaUsers,
-  },
 ];
 
 function Achievements() {

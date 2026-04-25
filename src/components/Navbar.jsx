@@ -75,7 +75,7 @@ function Navbar() {
           onClick={(event) => handleLinkClick(event, "home")}
           className="bg-gradient-to-r from-cyan-400 to-indigo-400 bg-clip-text text-2xl font-bold tracking-wide text-transparent"
         >
-          Satyam
+          Satyam Tomar
         </a>
 
         <ul className="hidden items-center gap-2 md:flex">
