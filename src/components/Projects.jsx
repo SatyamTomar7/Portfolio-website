@@ -14,7 +14,7 @@ const projects = [
       "Email alerts",
     ],
     githubUrl: "https://github.com/",
-    liveUrl: "#",
+    liveUrl: "https://lost-and-found-website-omega.vercel.app",
   },
   {
     title: "Weather App",
@@ -28,7 +28,7 @@ const projects = [
       "Mobile-first layout",
     ],
     githubUrl: "https://github.com/",
-    liveUrl: "#",
+    liveUrl: "https://weather-seven-olive-27.vercel.app/",
   },
   {
     title: "Todo App",
@@ -42,7 +42,7 @@ const projects = [
       "Simple and intuitive UX",
     ],
     githubUrl: "https://github.com/",
-    liveUrl: "#",
+    liveUrl: "https://todo-list-mu-wine-11.vercel.app/",
   },
 ];
 
