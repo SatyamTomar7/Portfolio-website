@@ -65,17 +65,17 @@ function Contact() {
   const socialLinks = [
     {
       label: "GitHub",
-      href: "https://github.com/",
+      href: "https://github.com/SatyamTomar7/",
       icon: FaGithub,
     },
     {
       label: "LinkedIn",
-      href: "https://www.linkedin.com/",
+      href: "https://www.linkedin.com/in/satyam-tomar-5267a1373",
       icon: FaLinkedin,
     },
     {
       label: "Email",
-      href: "mailto:satyam@example.com",
+      href: "mailto:tomarsatyam367@gmail.com",
       icon: FaEnvelope,
     },
   ];
