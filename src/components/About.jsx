@@ -34,7 +34,7 @@ function About() {
           <div className="order-1 md:order-2">
             <div className="relative overflow-hidden rounded-2xl border border-cyan-200/20 bg-slate-950/40">
               <img
-                src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=900&q=80"
+                src="https://quotefancy.com/media/wallpaper/3840x2160/8151359-Hello-World-Wallpaper.jpg"
                 alt="Developer workspace setup"
                 className="h-64 w-full object-cover sm:h-72 md:h-80"
                 loading="lazy"
