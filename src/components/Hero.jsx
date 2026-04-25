@@ -31,7 +31,7 @@ function Hero() {
     () => [
       {
         name: "GitHub",
-        href: "https://github.com/",
+        href: "https://github.com/SatyamTomar7",
         icon: (
           <svg
             viewBox="0 0 24 24"
@@ -45,7 +45,7 @@ function Hero() {
       },
       {
         name: "LinkedIn",
-        href: "https://www.linkedin.com/",
+        href: "https://www.linkedin.com/in/satyam-tomar-5267a1373",
         icon: (
           <svg
             viewBox="0 0 24 24"
